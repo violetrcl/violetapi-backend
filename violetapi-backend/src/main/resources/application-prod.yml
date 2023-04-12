@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://114.132.201.18:3306/violetapi
+    username: lch
+    password: lch0214rcl
+server:
+  address: 0.0.0.0

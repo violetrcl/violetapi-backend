@@ -1,0 +1,29 @@
+server:
+  port: 8082
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: path_route
+          uri: http://localhost:8123
+          predicates:
+            - Path=/api/**
+
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway: trace
+
+dubbo:
+  application:
+    name: violetAPI-backend-consumer
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    id: nacos-registry
+    address: nacos://localhost:8847
+
