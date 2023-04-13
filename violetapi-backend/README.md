@@ -23,4 +23,4 @@
 - 示例单元测试类
 - 示例 SQL（用户表）
 
-访问 localhost:7529/api/doc.html 就能在线调试接口了，不需要前端配合啦~
+访问 localhost:8080/api/doc.html 就能在线调试接口了，不需要前端配合啦~
