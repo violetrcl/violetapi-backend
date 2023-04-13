@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
 
 @SpringBootApplication(exclude = {RedisAutoConfiguration.class})
-//@MapperScan("csu.lch.violetapi.mapper")
+@MapperScan("csu.lch.violetapi.mapper")
 @EnableDubbo
 public class MyApplication {
 
