@@ -51,7 +51,7 @@ public class CustomGlobalFilter implements GlobalFilter, Ordered {
     /**
      * host
      */
-    private static final String INTERFACE_HOST = "http://localhost:8123";
+    private static final String INTERFACE_HOST = "http://localhost:8081";
 
     /**
      * 白名单列表
