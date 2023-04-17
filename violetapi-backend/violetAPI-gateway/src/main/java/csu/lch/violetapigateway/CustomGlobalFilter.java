@@ -131,7 +131,7 @@ public class CustomGlobalFilter implements GlobalFilter, Ordered {
         // TODO: 2023/4/9 是否还有调用次数
 
 //        // 5、请求转发，调用接口
-//        Mono<Void> filter = chain.filter(exchange);// TODO: 2023/4/6 filter方法看不懂，Mono是异步编程
+//        Mono<Void> filter = chain.filter(exchange);
 
         // 5、请求转发，调用接口，处理响应
         return handleResponse(exchange, chain, interfaceInfo.getId(), invokeUser.getId());
